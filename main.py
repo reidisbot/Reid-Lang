@@ -6,9 +6,7 @@ def comp():
     ff = ff.replace("write ", "print('")
     ff = ff.replace(".", "')")
     ff = ff.replace("", "")
-    with open('output.o', 'w') as t:
-        t.write(ff)
-        exec(ff)
+    exec(ff)
 
 while True:
     intt = input()
